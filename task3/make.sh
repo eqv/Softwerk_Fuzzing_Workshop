@@ -1,7 +1,7 @@
-clang++ -g -fsanitize=address -fsanitize-coverage=trace-pc-guard /usr/lib/llvm-5.0/lib/libFuzzer.a  lodepng/lodepng.cpp fuzz_tests.c -o fuzz_tests
+clang++-5.0 -g -fsanitize=address -fsanitize-coverage=trace-pc-guard /usr/lib/llvm-5.0/lib/libFuzzer.a  lodepng/lodepng.cpp fuzz_tests.c -o fuzz_tests
 #you can enable value-profile
-clang++ -g -fsanitize=address -fsanitize-coverage=trace-pc-guard,trace-cmp /usr/lib/llvm-5.0/lib/libFuzzer.a  lodepng/lodepng.cpp fuzz_tests.c -o fuzz_tests
-clang++ -fprofile-instr-generate -fcoverage-mapping -pthread lodepng/lodepng.cpp fuzz_tests.c StandaloneFuzzTargetMain.c -o coverage_tests
+clang++-5.0 -g -fsanitize=address -fsanitize-coverage=trace-pc-guard,trace-cmp /usr/lib/llvm-5.0/lib/libFuzzer.a  lodepng/lodepng.cpp fuzz_tests.c -o fuzz_tests
+clang++-5.0 -fprofile-instr-generate -fcoverage-mapping -pthread lodepng/lodepng.cpp fuzz_tests.c StandaloneFuzzTargetMain.c -o coverage_tests
 
 # Try out the more advanced features, add a single small valid input, a whole list of images, a dict or similarly
 # (example dict and images by lcamtuf)
