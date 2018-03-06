@@ -1,0 +1,39 @@
+\newcommand{\sourcewhite}[1]{\textcolor{hgwhite}{{\scriptsize #1}}}
+\newcommand{\sourceblack}[1]{\textcolor{hgdark}{{\scriptsize #1}}}
+\newcommand{\ccwhite}[1]{\sourcewhite{\includegraphics[scale=0.1135]{imgs/cc_white.pdf}\vspace{0.1em} #1}}
+\newcommand{\ccblack}[1]{\sourceblack{\includegraphics[scale=0.1135]{imgs/cc_black.pdf}\vspace{0.1em} #1}}
+
+\newcommand{\svg}[1]{\put(-28,-150){\includegraphics[width=12.77cm]{imgs/generated/\thememode_#1.pdf}}}
+\newcommand{\asvg}[2]{\visible<#1>{\svg{#2}}}
+
+\newcommand{\slide}[2]{%
+{%
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{theme/\thememode/imgs/#1.png}}
+\begin{frame}
+	\begin{picture}(0,0)(0,0)
+    #2
+  \end{picture}
+\end{frame}
+}%
+}
+
+\newcommand{\titleslide}[1]{%
+{%
+%\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{%
+  \leavevmode%
+		\begin{picture}(0,0)(0,0)
+		\put(-60,-10){\includegraphics[height=50ex]{theme/\thememode/imgs/logo_tilted.pdf}}%
+		\end{picture}%
+}
+
+\setbeamertemplate{background canvas}[default]
+\begin{frame}
+	\begin{picture}(0,0)(0,0)
+    #1
+  \end{picture}
+\end{frame}
+}
+
+}
+

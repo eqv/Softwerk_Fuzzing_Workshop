@@ -1,0 +1,110 @@
+\documentclass[serif]{beamer}
+%\newcommand{\thememode}{bright}
+\providecommand{\thememode}{bright}%
+%\documentclass[serif,mathserif]{beamer}
+\usepackage{amsmath, amsfonts, epsfig, xspace}
+\usepackage{marvosym}
+\usepackage{algorithm,algorithmic}
+\usepackage{rotating}
+\usepackage{hyperref}
+%\usepackage{pstricks,pst-node}
+%\usepackage{multimedia}
+\usepackage[normal,tight,center]{subfigure}
+\setlength{\subfigcapskip}{-.5em}
+%\usepackage{beamerthemesplit}
+%\usetheme{theme/hexgolems}
+\usepackage{theme/\thememode/beamerthemehexgolems}
+%\usepackage{arev}
+\usepackage[absolute,overlay]{textpos}
+\usepackage[utf8]{inputenc}
+\usepackage{soul}
+
+%\errorcontextlines 10000 %more context
+\author[Cornelius Aschermann]{Cornelius Aschermann}
+
+\institute{Syssec RUB}
+
+\begin{document}
+\input{theme/commands.tex}
+
+%\titleslide{%
+%    %\asvg{1}{about_me_topic}
+%}
+
+%\slide{eye}{%
+%  \asvg{1-3}{magic_smt}
+%}
+
+
+\slide{eye}{
+  \asvg{1}{fuzzing_title}
+  \asvg{2-}{fuzzing_program}
+  \asvg{3-}{fuzzing_input}
+  \asvg{4-}{fuzzing_run}
+  \asvg{5}{fuzzing_mutate}
+  \asvg{6-}{fuzzing_runs}
+}
+
+\slide{eye}{
+  \asvg{1}{afl_title}
+  \asvg{2-}{afl_program}
+  \asvg{3-}{afl_input_1}
+  \asvg{4}{afl_mutate_1}
+  \asvg{4-}{afl_input_2}
+  \asvg{5-7}{afl_run_1}
+  \asvg{6-}{afl_glas}
+  \asvg{7,11,15}{afl_get_coverage}
+  \asvg{7,8}{afl_code_hl1}
+
+  \asvg{8-}{afl_input_2}
+  \asvg{8,9}{afl_accept_2}
+  \asvg{9-10,13-14}{afl_code_state_1}
+
+  \asvg{10-12}{afl_input_3}
+  \asvg{10-11}{afl_mutate_2}
+  \asvg{11}{afl_run_3}
+  \asvg{11,12}{afl_code_hl1}
+  \asvg{12}{afl_discard}
+
+  \asvg{14-}{afl_input_3}
+  \asvg{14}{afl_mutate_3}
+  \asvg{15}{afl_run_3}
+  \asvg{15,16}{afl_code_hl2}
+  \asvg{16}{afl_accept_3}
+  \asvg{17}{afl_code_state_2}
+}
+
+\slide{eye}{
+  \asvg{1}{libfuzzer_title}
+}
+
+\slide{gears}{
+  \asvg{1-}{tasks_1}
+}
+
+\slide{eye}{
+  \asvg{1}{pbt_title}
+}
+
+\slide{gears}{
+  \asvg{1-}{tasks_2}
+}
+
+
+\slide{eye}{
+  \asvg{1}{roadblocks_title}
+}
+
+\slide{gears}{
+  \asvg{1-}{tasks_3}
+}
+
+%\slide{head}{
+%  \asvg{1-}{headlines_task}
+%}
+%
+%\slide{bug}{
+%  \asvg{1}  {headlines_crypto}
+%}
+
+\end{document}

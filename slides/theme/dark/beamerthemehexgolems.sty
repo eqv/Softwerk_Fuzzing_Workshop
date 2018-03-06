@@ -1,0 +1,68 @@
+\renewcommand\sfdefault{phv}
+\renewcommand\familydefault{\sfdefault}
+\usetheme{default}
+\usepackage{color}
+\useoutertheme{default}
+%\usepackage{texnansi}
+\usepackage{marvosym}
+
+\definecolor{hgpink}{rgb}{0.984375,0.0390625,0.28515625}
+\definecolor{hgyellow}{rgb}{0.921875,0.80859375,0.5}
+\definecolor{hgblue}{rgb}{0.3359375,0.5703125,0.83984375}
+\definecolor{hggreen}{rgb}{0.203125,0.80078125,0.2734375}
+\definecolor{hgwhite}{rgb}{0.98046875,0.94921875,0.94140625}
+\definecolor{hggray}{rgb}{0.63671875,0.56640625,0.56640625}
+\definecolor{hgbg}{rgb}{0.1953125,0.1640625,0.1640625}
+\definecolor{hgdark}{rgb}{0.109375,0.08984375,0.0859375}
+
+\setbeamerfont{title}{size=\Huge}
+\setbeamercolor{footer author}{bg = hgdark,fg=hggray}
+\setbeamercolor{footer structure}{bg = hgdark,fg=hgwhite}
+\setbeamercolor{footer colorline}{bg = hgpink,fg=hgwhite}
+\setbeamercolor{header}{bg = hgdark,fg=hgwhite}
+\setbeamercolor{bgleft}{bg = hgbg,fg=hgwhite}
+\setbeamertemplate{frametitle}[default]%[center]
+\setbeamercolor{normal text}{bg=hgdark, fg=hgwhite}
+\setbeamertemplate{background canvas}[solid]
+\beamertemplatesolidbackgroundcolor{hgbg}
+\setbeamertemplate{items}[circle]
+%\setbeamerfont{frametitle}{size=\huge}
+\setbeamertemplate{navigation symbols}{} %no nav symbols
+\setbeamercolor{block title}{bg=hbdark,fg=hgwhite}
+\setbeamercolor{block body}{bg=hbdark,fg=hgwhite}
+\setbeamercolor{itemize item}{fg=hgwhite}
+\setbeamertemplate{blocks}[rounded]
+\setbeamercovered{transparent}
+
+\setbeamercolor{title}{parent=hgpink}
+
+\setbeamertemplate{headline}%
+{%
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=4.5ex,dp=1ex,center]{header}%
+		\begin{picture}(0,0)(0,0)
+		\put(57,-8.2){\includegraphics[height=6ex]{theme/\thememode/imgs/logo_and_title.pdf}}
+		\end{picture}
+  \end{beamercolorbox}%
+	}%
+  \vskip0pt%
+}
+
+\setbeamertemplate{footline}%
+{%
+  \leavevmode%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=0.2ex,dp=0.1ex,center]{footer colorline}\end{beamercolorbox}
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{footer author}%
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+		\begin{picture}(0,0)(0,0)
+		\put(-179,-2.2){\includegraphics[height=20ex]{theme/\thememode/imgs/big_logo.pdf}}%
+		\end{picture}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right]{footer structure}%
+    \usebeamerfont{title in head/foot}
+		\inserttitle \hspace*{3em}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}

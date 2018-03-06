@@ -1,0 +1,19 @@
+GIMP Palette
+Name: HexGolems
+Columns: 0
+#
+252 10  73				main
+236  207  128			code
+251 243 241				text_white
+163 145 145				text_gray
+252 10  72				higlight_red
+86  146  215			highlight_blue
+52  205  70				highlight_green
+248 159 0         highlight_orange
+
+50  42  42				background
+28  23  22				dark
+53 69 93          dark_blue
+100 127 165       bright_blue
+208 0 55          dark_pink
+0  138 15         dark green
